@@ -1538,6 +1538,54 @@ p:last-child {
   color: var(--white);
 }
 
+.portfolio-jumps {
+  padding: clamp(36px, 5vw, 56px) 0;
+  background: var(--white);
+  border-top: 1px solid var(--line);
+}
+
+.portfolio-jumps-inner {
+  display: grid;
+  gap: 18px;
+  text-align: center;
+}
+
+.portfolio-jumps-label {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+}
+
+.portfolio-jumps-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 14px;
+}
+
+.portfolio-jumps-list a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 1.05rem;
+  border: 1px solid var(--copper);
+  color: var(--charcoal);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.portfolio-jumps-list a:hover,
+.portfolio-jumps-list a[aria-current="page"] {
+  background: var(--copper);
+  color: var(--white);
+}
+
 .service-block {
   display: grid;
   grid-template-columns: 1.7fr 1fr;
