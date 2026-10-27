@@ -10,6 +10,7 @@
   --orange: #f15f22;
   --maxw: 1080px;
   --header-h: 80px;
+  --home-split-pad: clamp(28px, 5vw, 64px);
   --cdn: https://media.cwd-cdn.com/Jill-Maxwell-Design-Build;
   --font: "Lato", Helvetica, Arial, Lucida, sans-serif;
 }
@@ -1171,9 +1172,11 @@ p:last-child {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: min(520px, 48%);
-  margin-left: max(24px, calc((100% - 1080px) / 2));
-  padding: 32px 0;
+  box-sizing: border-box;
+  width: 50%;
+  max-width: none;
+  margin: 0;
+  padding: clamp(32px, 5vw, 56px) var(--home-split-pad);
   line-height: normal;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.2) 70%, transparent 100%);
 }
@@ -1227,7 +1230,8 @@ p:last-child {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: clamp(32px, 5vw, 56px) clamp(28px, 5vw, 64px);
+  box-sizing: border-box;
+  padding: clamp(32px, 5vw, 56px) var(--home-split-pad);
 }
 
 .featured-eyebrow {
@@ -1265,7 +1269,8 @@ p:last-child {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: clamp(40px, 6vw, 72px) clamp(28px, 5vw, 64px);
+  box-sizing: border-box;
+  padding: clamp(40px, 6vw, 72px) var(--home-split-pad);
   background: var(--white);
 }
 
@@ -1368,7 +1373,8 @@ p:last-child {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: clamp(40px, 6vw, 72px) clamp(28px, 5vw, 56px);
+  box-sizing: border-box;
+  padding: clamp(40px, 6vw, 72px) var(--home-split-pad);
   max-width: 58%;
 }
 
@@ -1820,8 +1826,9 @@ body.lightbox-open {
 
 @media (max-width: 900px) {
   .lifestyle-panel {
-    width: min(520px, calc(100% - 48px));
-    margin-left: 24px;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.25) 80%, transparent 100%);
+    width: 100%;
+    max-width: none;
+    padding: 36px var(--home-split-pad);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.3) 75%, transparent 100%);
   }
 }
