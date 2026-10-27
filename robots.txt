@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jillmaxwelldesign.com/sitemap.xml

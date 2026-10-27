@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <script>
+    (function () {
+      if (window.location.protocol === "file:" || /^(localhost|127\.0\.0\.1)$/i.test(window.location.hostname)) return;
+      var path = window.location.pathname;
+      if (!/\.html$/i.test(path)) return;
+      var clean = path.replace(/\.html$/i, "");
+      if (/\/index$/i.test(clean)) clean = clean.replace(/\/index$/i, "/") || "/";
+      if (clean === "") clean = "/";
+      window.location.replace(clean + window.location.search + window.location.hash);
+    })();
+  </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home - Jill Maxwell</title>
+  <meta name="description" content="Jill Maxwell Design-Build — interior design, renovations, new builds, project management, staging and event planning." />
+  <link rel="canonical" href="https://jillmaxwelldesign.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jillmaxwelldesign.com/" />
+  <meta property="og:title" content="Home - Jill Maxwell" />
+  <meta property="og:description" content="We design a lifestyle, not just a project." />
+  <meta property="og:image" content="https://media.cwd-cdn.com/Jill-Maxwell-Design-Build/images/hero.jpg" />
+  <link rel="icon" href="https://media.cwd-cdn.com/Jill-Maxwell-Design-Build/images/favicon-32.jpg" type="image/jpeg" sizes="32x32" />
+  <link rel="icon" href="https://media.cwd-cdn.com/Jill-Maxwell-Design-Build/images/favicon.jpg" type="image/jpeg" sizes="192x192" />
+  <link rel="apple-touch-icon" href="https://media.cwd-cdn.com/Jill-Maxwell-Design-Build/images/favicon.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://media.cwd-cdn.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Jill Maxwell Design-Build",
+    "url": "https://jillmaxwelldesign.com/",
+    "image": "https://media.cwd-cdn.com/Jill-Maxwell-Design-Build/images/logo.png",
+    "telephone": "+1-705-351-3680",
+    "description": "Interior design, renovations, new-build construction, project management, staging and event planning.",
+    "areaServed": ["Collingwood", "Creemore", "The Blue Mountains", "Toronto", "Southern Georgian Bay"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="./">
+        <img
+          src="https://media.cwd-cdn.com/Jill-Maxwell-Design-Build/images/logo.png"
+          alt="Jill Maxwell"
+          width="401"
+          height="90"
+        />
+      </a>
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" />
+      <label class="nav-toggle-label" for="nav-toggle">Menu</label>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="./" aria-current="page">Home</a>
+        <a href="about">About Us</a>
+        <div class="nav-dropdown">
+          <a href="services">Services</a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="services#interior-design">Interior Design</a></li>
+            <li><a href="services#renovations-new-build">Renovations-New Build</a></li>
+            <li><a href="services#project-management">Project Management</a></li>
+            <li><a href="services#staging">Staging</a></li>
+          </ul>
+        </div>
+        <a href="event-planning">Event Planning</a>
+        <div class="nav-dropdown">
+          <a href="portfolio">Portfolio</a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="country-estate">Country Estate</a></li>
+            <li><a href="oak-bay-golf-club">Oak Bay Golf Club</a></li>
+            <li><a href="modern-custom-build">Modern Custom Build</a></li>
+            <li><a href="1894-stone-farmhouse">1894 Stone Farmhouse</a></li>
+            <li><a href="midtown-transitional">Midtown Transitional</a></li>
+            <li><a href="the-friendly-butcher">The Friendly Butcher</a></li>
+            <li><a href="custom-renovation">Custom Renovation</a></li>
+            <li><a href="1920-triplex-apt">1920 Triplex Apt</a></li>
+            <li><a href="victorian-brownstone">Victorian Brownstone</a></li>
+          </ul>
+        </div>
+        <a href="media">Media</a>
+        <a href="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="home-slider" aria-label="Featured work">
+      <div class="home-slider-track" data-slider>
+        <figure class="home-slide is-active">
+          <img src="https://media.cwd-cdn.com/Jill-Maxwell-Design-Build/images/slide-1.jpg" alt="Jill Maxwell design-build interior" width="2000" height="1124" fetchpriority="high" />
+        </figure>
+        <figure class="home-slide">
+          <img src="https://media.cwd-cdn.com/Jill-Maxwell-Design-Build/images/slide-2.jpg" alt="Custom designed living space" width="2000" height="1124" loading="lazy" />
+        </figure>
+        <figure class="home-slide">
+          <img src="https://media.cwd-cdn.com/Jill-Maxwell-Design-Build/images/slide-3.jpg" alt="Design-build project detail" width="2000" height="1124" loading="lazy" />
+        </figure>
+        <figure class="home-slide">
+          <img src="https://media.cwd-cdn.com/Jill-Maxwell-Design-Build/images/hero.jpg" alt="Finished interior by Jill Maxwell" width="2000" height="1124" loading="lazy" />
+        </figure>
+        <figure class="home-slide">
+          <img src="https://media.cwd-cdn.com/Jill-Maxwell-Design-Build/images/master-ensuite.jpg" alt="Master ensuite" width="2000" height="1124" loading="lazy" />
+        </figure>
+        <figure class="home-slide">
+          <img src="https://media.cwd-cdn.com/Jill-Maxwell-Design-Build/images/great-room.jpg" alt="Great room" width="2000" height="1124" loading="lazy" />
+        </figure>
+        <figure class="home-slide">
+          <img src="https://media.cwd-cdn.com/Jill-Maxwell-Design-Build/images/custom-home.jpg" alt="Custom home interior" width="2000" height="1124" loading="lazy" />
+        </figure>
+      </div>
+      <button class="home-slider-btn home-slider-btn--prev" type="button" data-slider-prev aria-label="Previous">‹</button>
+      <button class="home-slider-btn home-slider-btn--next" type="button" data-slider-next aria-label="Next">›</button>
+      <div class="home-slider-dots" data-slider-dots aria-label="Slides"></div>
+    </section>
+
+    <section class="statement">
+      <div class="wrap statement-inner">
+        <h2>Statement in style</h2>
+        <hr class="statement-rule" />
+        <div class="statement-services">
+          <div class="statement-item">
+            <span class="statement-icon" aria-hidden="true"></span>
+            <p>Interior Design</p>
+          </div>
+          <div class="statement-item">
+            <span class="statement-icon" aria-hidden="true"></span>
+            <p>Renovations<br />New Build</p>
+          </div>
+          <div class="statement-item">
+            <span class="statement-icon" aria-hidden="true"></span>
+            <p>Project<br />Management</p>
+          </div>
+          <div class="statement-item">
+            <span class="statement-icon" aria-hidden="true"></span>
+            <p>Staging</p>
+          </div>
+          <div class="statement-item">
+            <span class="statement-icon" aria-hidden="true"></span>
+            <p>Event Planning</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lifestyle" aria-label="About us">
+      <picture>
+        <source
+          media="(max-width: 900px)"
+          srcset="https://media.cwd-cdn.com/Jill-Maxwell-Design-Build/images/lifestyle-bg.jpg"
+        />
+        <img
+          class="lifestyle-img"
+          src="https://media.cwd-cdn.com/Jill-Maxwell-Design-Build/images/lifestyle-bg-desktop.jpg"
+          alt=""
+          width="1600"
+          height="749"
+          loading="lazy"
+        />
+      </picture>
+      <div class="lifestyle-panel">
+        <p class="lifestyle-eyebrow">About Us:</p>
+        <h2>We design a lifestyle,<br />not just a project.</h2>
+        <a class="btn btn--copper" href="about">Learn More</a>
+      </div>
+    </section>
+
+    <section class="featured-row">
+      <div
+        class="featured-visual"
+        style="background-image:url('https://media.cwd-cdn.com/Jill-Maxwell-Design-Build/images/country-estate-full.jpg')"
+        role="img"
+        aria-label="Country Estate, River Road, Creemore"
+      ></div>
+      <div class="featured-copy">
+        <p class="featured-eyebrow"><strong>Featured:</strong></p>
+        <h2>Country Estate</h2>
+        <p class="featured-loc">River Road, Creemore.</p>
+        <a class="btn btn--copper" href="portfolio">View Portfolio</a>
+      </div>
+    </section>
+
+    <section class="featured-row featured-row--flip">
+      <div class="featured-copy">
+        <p class="featured-eyebrow"><strong>Featured:</strong></p>
+        <h2>Modern Custom Build</h2>
+        <p class="featured-loc">Mineola, Mississauga.</p>
+        <a class="btn btn--copper" href="portfolio">View Portfolio</a>
+      </div>
+      <div
+        class="featured-visual"
+        style="background-image:url('https://media.cwd-cdn.com/Jill-Maxwell-Design-Build/images/modern-custom-full.jpg')"
+        role="img"
+        aria-label="Modern Custom Build, Mineola, Mississauga"
+      ></div>
+    </section>
+
+    <section class="featured-row">
+      <div
+        class="featured-visual"
+        style="background-image:url('https://media.cwd-cdn.com/Jill-Maxwell-Design-Build/images/oak-bay-full.jpg')"
+        role="img"
+        aria-label="Oak Bay Golf Club, Honey Harbour, Port Severn"
+      ></div>
+      <div class="featured-copy">
+        <p class="featured-eyebrow"><strong>Featured:</strong></p>
+        <h2>Oak Bay Golf Club</h2>
+        <p class="featured-loc">Honey Harbour, Port Severn.</p>
+        <a class="btn btn--copper" href="portfolio">View Portfolio</a>
+      </div>
+    </section>
+
+    <section class="home-contact" aria-label="Contact">
+      <div class="home-contact-form-wrap">
+        <h2>Send a message</h2>
+        <form id="contact-form" class="home-form">
+          <div class="home-form-row">
+            <label class="visually-hidden" for="home-name">Name</label>
+            <input id="home-name" name="Name" type="text" placeholder="Name" required autocomplete="name" />
+
+            <label class="visually-hidden" for="home-email">Email Address</label>
+            <input id="home-email" name="Email" type="email" placeholder="Email Address" required autocomplete="email" />
+          </div>
+
+          <label class="visually-hidden" for="home-message">Message</label>
+          <textarea id="home-message" name="Message" rows="5" placeholder="Message" required></textarea>
+
+          <input
+            type="text"
+            name="website"
+            data-cwd-honeypot
+            tabindex="-1"
+            autocomplete="off"
+            style="position:absolute;left:-9999px;opacity:0;height:0;width:0"
+            aria-hidden="true"
+          />
+
+          <div class="home-form-actions">
+            <button type="submit" class="btn btn--copper">Submit</button>
+            <p class="contact-form-status" data-cwd-contact-status role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+      <div class="home-contact-photo">
+        <div class="home-contact-details">
+          <h2>Contact Jill</h2>
+          <p>Bus: <a href="tel:+17053513680">705.351.3680</a></p>
+          <p>Cell: <a href="tel:+14163183680">416.318.3680</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer site-footer--simple">
+    <div class="wrap footer-simple">
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="./">Home</a>
+        <a href="about">About Us</a>
+        <a href="services">Services</a>
+        <a href="event-planning">Event Planning</a>
+        <a href="portfolio">Portfolio</a>
+        <a href="media">Media</a>
+        <a href="contact">Contact</a>
+      </nav>
+      <div class="footer-meta">
+        <p class="footer-copy">Copyright © <span id="y"></span> Jill Maxwell Design | Developed by <a href="https://collingwoodwebdesign.com/" rel="noopener">Collingwood Web Design</a></p>
+        <a class="footer-instagram" href="https://www.instagram.com/jillmaxwelldesign/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+  <script src="js/site.js" defer></script>
+  <script src="https://web-production-54a6d.up.railway.app/static/cwd-contact.js"></script>
+</body>
+</html>
