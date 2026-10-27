@@ -599,27 +599,23 @@ p:last-child {
   margin-bottom: 12px;
 }
 
-/* ========== About page (match live) ========== */
+/* ========== About page (full-bleed top like event / home splits) ========== */
 .about-intro {
-  background: var(--white);
-}
-
-.about-intro-grid {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  background: var(--white);
   align-items: stretch;
 }
 
-@media (min-width: 900px) {
-  .about-intro-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 .about-intro-copy {
-  padding: clamp(36px, 6vw, 72px) clamp(24px, 5vw, 64px);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-sizing: border-box;
+  padding: clamp(36px, 5vw, 64px) var(--home-split-pad);
 }
 
 .about-quote {
@@ -643,20 +639,19 @@ p:last-child {
   font-size: 17px;
   font-weight: 600;
   line-height: 1.8;
+  margin: 0 0 1.1em;
+}
+
+.about-intro-copy p:last-child {
+  margin-bottom: 0;
 }
 
 .about-intro-media {
   margin: 0;
-  background: #eee;
-  min-height: 420px;
-}
-
-.about-intro-media img {
-  width: 100%;
-  height: 100%;
-  min-height: 520px;
-  object-fit: cover;
-  object-position: center top;
+  min-height: 560px;
+  background:
+    center top / cover no-repeat
+      url("https://media.cwd-cdn.com/Jill-Maxwell-Design-Build/images/about-jill.jpg");
 }
 
 .about-philosophy {
@@ -962,8 +957,13 @@ p:last-child {
     transform: none;
   }
 
-  .about-intro-media img {
+  .about-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .about-intro-media {
     min-height: 420px;
+    order: -1;
   }
 
   .portfolio-card:first-child img {
