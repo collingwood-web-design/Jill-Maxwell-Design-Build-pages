@@ -1016,7 +1016,10 @@ p:last-child {
 
 .home-slider-track {
   position: relative;
-  min-height: min(72vh, 820px);
+  width: 100%;
+  /* Prefer natural slide ratio (2000×1124); keep bottom watermark in frame */
+  height: min(82vh, calc(100vw * 1124 / 2000), 900px);
+  min-height: 360px;
 }
 
 .home-slide {
@@ -1038,6 +1041,7 @@ p:last-child {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center bottom;
 }
 
 .home-slider-btn {
@@ -1071,7 +1075,7 @@ p:last-child {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 18px;
+  bottom: 22px;
   z-index: 3;
   display: flex;
   justify-content: center;
@@ -1152,33 +1156,50 @@ p:last-child {
 
 .lifestyle {
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 465px;
   color: var(--white);
-  line-height: 0;
   background: #1a1a1a;
+  overflow: hidden;
 }
 
-.lifestyle picture,
+.lifestyle picture {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  margin: 0;
+  line-height: 0;
+}
+
 .lifestyle-img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
   display: block;
 }
 
 .lifestyle-panel {
-  position: absolute;
-  inset: 0 auto 0 0;
+  position: relative;
   z-index: 1;
+  grid-column: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   box-sizing: border-box;
-  width: 50%;
+  width: 100%;
   max-width: none;
   margin: 0;
   padding: clamp(32px, 5vw, 56px) var(--home-split-pad);
   line-height: normal;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.2) 70%, transparent 100%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.28) 75%, transparent 100%);
+}
+
+.lifestyle::after {
+  content: "";
+  grid-column: 2;
 }
 
 .lifestyle-eyebrow {
@@ -1825,10 +1846,25 @@ body.lightbox-open {
 }
 
 @media (max-width: 900px) {
+  .lifestyle {
+    grid-template-columns: 1fr;
+    min-height: 420px;
+  }
+
+  .lifestyle::after {
+    display: none;
+  }
+
   .lifestyle-panel {
     width: 100%;
     max-width: none;
+    min-height: 420px;
     padding: 36px var(--home-split-pad);
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.3) 75%, transparent 100%);
+  }
+
+  .home-slider-track {
+    height: min(70vh, calc(100vw * 1124 / 2000));
+    min-height: 280px;
   }
 }
